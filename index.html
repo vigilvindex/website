@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vigil Vindex</title>
+    <meta
+      name="description"
+      content="VigilVindex website."
+    />
+    <meta name="author" content="vigil.vindex@gmail.com" />
+    <style>
+      body {
+        margin: 15px auto;
+        max-width: 650px;
+        line-height: 1.2;
+        font-family: sans-serif;
+        font-size: 2em;
+        color: #fff;
+        background: #000;
+      }
+    </style>
+  </head>
+  <body onload="main()">
+    <h1>Vigil Vindex</h1>
+    <p id="content"></p>
+    <script>
+      function main() {
+        const quotes = [
+          'Nothing good comes easy.',
+          'Death is a gift too precious to be given to those who should be punished.',
+          'The abolition of private property is my only goal.',
+          'Everything burns.',
+          'With great power comes great responsability, but also great consequences.'
+        ]
+        document.querySelector('#content').innerHTML =
+          quotes[Math.floor(Math.random() * quotes.length)]
+      }
+    </script>
+  </body>
+</html>
